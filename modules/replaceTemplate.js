@@ -1,4 +1,4 @@
-module.exports = (temp, product) => {
+module.exports = (temp, product) => {  // This is anonymous function because it has no name
   let output = temp.replace(/{%PRODUCTNAME%}/g, product.productName);
   output = output.replace(/{%IMAGE%}/g, product.image);
   output = output.replace(/{%PRICE%}/g, product.price);
